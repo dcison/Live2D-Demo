@@ -1,12 +1,12 @@
 {
     "version":"1.0.0",
     "model":"model.moc",
-    "textures":[
+    "textures":[ 
         "textures/default-costume.png"
     ],
     "layout":{
         "center_x":0.0,
-        "center_y":-0.05,
+        "center_y":0.10,
         "width":2.0
     },
     "hit_areas_custom":{
@@ -17,13 +17,13 @@
     },
     "motions":{
         "idle":[
-            {"file":"motions/WakeUp.mtn"},
-            {"file":"motions/Breath1.mtn"},
-            {"file":"motions/Breath2.mtn"},
-            {"file":"motions/Breath3.mtn"},
-            {"file":"motions/Breath5.mtn"},
-            {"file":"motions/Breath7.mtn"},
-            {"file":"motions/Breath8.mtn"}
+            {"file":"motions/WakeUp.mtn","fade_in":2000, "fade_out":2000},
+            {"file":"motions/Breath1.mtn","fade_in":2000, "fade_out":2000},
+            {"file":"motions/Breath2.mtn","fade_in":2000, "fade_out":2000},
+            {"file":"motions/Breath3.mtn","fade_in":2000, "fade_out":2000},
+            {"file":"motions/Breath5.mtn","fade_in":2000, "fade_out":2000},
+            {"file":"motions/Breath7.mtn","fade_in":2000, "fade_out":2000},
+            {"file":"motions/Breath8.mtn","fade_in":2000, "fade_out":2000}
         ],
         "sleepy":[
             {"file":"motions/Sleeping.mtn"}
