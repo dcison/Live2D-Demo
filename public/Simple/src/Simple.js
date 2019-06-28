@@ -134,7 +134,7 @@ Simple.initLoop = function(canvas)
 };
 
 
-Simple.draw = function(gl)
+Simple.draw = function(gl) // 渲染处理
 {
 	
 	gl.clear(gl.COLOR_BUFFER_BIT);
@@ -181,7 +181,7 @@ Simple.draw = function(gl)
 
 
 
-Simple.getWebGLContext = function(canvas)
+Simple.getWebGLContext = function(canvas) // 处理webGL
 {
 	var NAMES = [ "webgl" , "experimental-webgl" , "webkit-3d" , "moz-webgl"];
 	
@@ -202,7 +202,7 @@ Simple.getWebGLContext = function(canvas)
 
 
 
-Simple.createTexture = function(gl, image/*WebGL Image*/) 
+Simple.createTexture = function(gl, image/*WebGL Image*/)  // 纹理
 {
 	var texture = gl.createTexture(); 
 	if ( !texture ){
@@ -228,7 +228,7 @@ Simple.createTexture = function(gl, image/*WebGL Image*/)
 
 
 
-Simple.loadBytes = function(path , callback)
+Simple.loadBytes = function(path , callback) // 加载模型资源
 {
     var request = new XMLHttpRequest();
 	request.open("GET", path , true);
@@ -249,7 +249,7 @@ Simple.loadBytes = function(path , callback)
 
 
 
-Simple.mylog = function(msg/*string*/)
+Simple.mylog = function(msg/*string*/) // 处理日志
 {
 	var myconsole = document.getElementById("myconsole");
 	myconsole.innerHTML = myconsole.innerHTML + "<br>" + msg;
